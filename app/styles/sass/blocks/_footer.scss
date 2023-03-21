@@ -1,0 +1,245 @@
+.footer {
+    background: #1E212C;
+    padding-top: 80px;
+
+    &__columns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__info-column {
+        width: 280px;
+    }
+
+    &__info-image {
+        margin-bottom: 24px;
+    }
+
+    &__info-text {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+        opacity: 0.6;
+        margin-bottom: 38px;
+    }
+
+    &__info-socials-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__info-socials-link {
+        color: #FFFFFF;
+        opacity: .6;
+        font-size: 24px;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    &__site-map-column {
+        width: 81px;
+    }
+
+    &__site-map-title {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__site-map-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &__site-map-link {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        opacity: .6;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    &__courses-column {
+        width: 110px;
+    }
+
+    &__courses-title {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__courses-link {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        opacity: .6;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    &__courses-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+
+    &__contacts-column {
+        width: 157px;
+    }
+
+    &__contacts-title {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__contacts-link-phone,
+    &__contacts-link-email {
+        display: inline-block;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        opacity: .6;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    &__contacts-link-phone {
+        margin-bottom: 6px;
+    }
+
+    .icon-phone,
+    .icon-email {
+        &:before {
+            margin-right: 4px;
+        }
+        vertical-align: middle;
+    }
+
+    &__sign-up-column {
+        width: 286px;
+    }
+
+    &__sign-up-title {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__sign-up-form {
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+    &__sign-up-input {
+        color: #FFFFFF;
+        width: 286px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        padding: 9px 40px 9px 12px;
+        &::placeholder {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.5;
+            opacity: 0.6;
+        }
+    }
+
+    &__sign-up-button {
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+        width: 40px;
+        height: 36px;
+        padding: 0 12px;
+    }
+
+    .icon-arrow-right:before {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    &__sign-up-text {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .copyright {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 20px 0;
+    
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__text {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    
+        .icon-heart {
+            &:before {
+                color: #FF3F3A;
+                font-size: 16px;
+            }
+            padding: 2px;
+            vertical-align: middle;
+        }
+    
+        &__link {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            opacity: 0.6;
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                color: #FFFFFF;
+                opacity: 1;
+            }
+        }
+    }
+}

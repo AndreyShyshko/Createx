@@ -1,0 +1,160 @@
+// GENERAL PROJECT STYLES
+h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    padding: 0;
+}
+
+.container {
+    width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// icons
+
+.icon-star:before {
+    content: "\e900";
+    font-family: 'icomoon';
+}
+
+.icon-like:before {
+    content: "\e901";
+    font-family: 'icomoon';
+
+}
+
+.icon-layouts:before {
+    content: "\e902";
+    font-family: 'icomoon';
+
+}
+
+.icon-chat:before {
+    content: "\e903";
+    font-family: 'icomoon';
+
+}
+
+.icon-profile:before {
+    content: "\e904";
+    font-family: 'icomoon';
+
+}
+
+.icon-facebook:before {
+    content: "\e905";
+    font-family: 'icomoon';
+
+}
+
+.icon-instagram:before {
+    content: "\e906";
+    font-family: 'icomoon';
+
+}
+
+.icon-linkedin:before {
+    content: "\e907";
+    font-family: 'icomoon';
+
+}
+
+.icon-arrow-left:before {
+    content: "\e908";
+    font-family: 'icomoon';
+
+}
+
+.icon-arrow-right:before {
+    content: "\e909";
+    font-family: 'icomoon';
+
+}
+
+.icon-calendar:before {
+    content: "\e90a";
+    font-family: 'icomoon';
+
+}
+
+.icon-clock:before {
+    content: "\e90b";
+    font-family: 'icomoon';
+
+}
+
+.icon-article:before {
+    content: "\e90c";
+    font-family: 'icomoon';
+
+}
+
+.icon-microphone:before {
+    content: "\e90d";
+    font-family: 'icomoon';
+
+}
+
+.icon-play:before {
+    content: "\e90e";
+    font-family: 'icomoon';
+
+}
+
+.icon-telegram:before {
+    content: "\e90f";
+    font-family: 'icomoon';
+
+}
+
+.icon-youtube:before {
+    content: "\e910";
+    font-family: 'icomoon';
+
+}
+
+.icon-twitter:before {
+    content: "\e911";
+    font-family: 'icomoon';
+
+}
+
+.icon-heart:before {
+    content: "\e912";
+    font-family: 'icomoon';
+
+}
+
+.icon-email:before {
+    content: "\e913";
+    font-family: 'icomoon';
+
+}
+
+.icon-phone:before {
+    content: "\e914";
+    font-family: 'icomoon';
+}
+
+.icon-check:before {
+    content: "\e915";
+    font-family: 'icomoon';
+}

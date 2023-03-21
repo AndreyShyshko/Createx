@@ -1,0 +1,129 @@
+.hero {
+    background-image: url("../images/dist/homepage/hero/arrows-top-left.svg"),
+                    url("../images/dist/homepage/hero/arrows-top-right.svg"),
+                    url("../images/dist/homepage/hero/semicircles-center.svg"),
+                    url("../images/dist/homepage/hero/circles-bottom-left.svg"),
+                    url("../images/dist/homepage/hero/semicircle-bottom-center.svg"),
+                    url("../images/dist/homepage/hero/dots-bottom-right.svg"),
+                    linear-gradient(55.95deg,
+                    rgba(255, 63, 58, .2),
+                    rgba(247, 94, 5, .2));
+    background-position: top 133px left 35px, top 0 right 25px, top 46% left 41%, bottom 0 left 0, bottom 25% left 38%, bottom 20% right 0, center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 200px 0 80px 0;
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 190px;
+    }
+
+    &__showreel {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        margin-left: -16px;
+    }
+
+    &__showreel-batton {
+        background-color: transparent;
+        width: 84px;
+        height: 84px;
+
+        &:hover {
+            content: '';
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background-color: rgba(255, 63, 58, .12);
+        }
+    }
+
+    &__showreel-text {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    &__title {
+        color: #1E212C;
+        width: 500px;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.3;
+        margin-bottom: 60px;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__about-us-link {
+        color: #FF3F3A;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 148px;
+        height: 52px;
+        border: 2px solid #FF3F3A;
+        border-radius: 4px;
+        background-color: transparent;
+        margin-right: 24px;
+        &:hover {
+            color: #FF3F3A;
+        }
+    }
+
+    &__courses-link {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 52px;
+        background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+        border-radius: 4px;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &__statistics-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__statistics-item {
+        position: relative;
+    }
+
+    &__statistics-item:not(:first-child):before {
+        display: block;
+        content: '';
+        background-color: #FF3F3A;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 4px);
+        left: -40%;
+    }
+
+    &__statistics-text {
+        color: #1E212C;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    &__statistics-number {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1;
+        vertical-align: -25%;
+    }
+}

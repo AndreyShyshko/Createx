@@ -1,0 +1,84 @@
+// USER VARIABLES SECTION
+
+$accent: #FF3F3A // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #1E212C // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: Lato, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// USER ICON FONT (ICOMOON)
+
+$icon-star: '\e900'
+$icon-like: '\e901'
+$icon-layouts: '\e902'
+$icon-chat: '\e903'
+$icon-profile: '\e904'
+$icon-facebook: '\e905'
+$icon-instagram: '\e906'
+$icon-linkedin: '\e907'
+$icon-arrow-left: '\e908'
+$icon-arrow-right: '\e909'
+$icon-calendar: '\e90a'
+$icon-clock: '\e90b'
+$icon-article: '\e90c'
+$icon-microphone: '\e90d'
+$icon-play: '\e90e'
+$icon-telegram: '\e90f'
+$icon-youtube: '\e910'
+$icon-twitter: '\e911'
+$icon-heart: '\e912'
+$icon-email: '\e913'
+$icon-phone: '\e914'
+$icon-check: '\e915'
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/swiper/swiper-bundle'
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Lato', normal, 400, '../fonts/Lato-Regular.woff2')
+@include font('Lato', bold, 700, '../fonts/Lato-Bold.woff2')
+@include font('Lato', black, 900, '../fonts/Lato-Black.woff2')
+@include font('icomoon', normal, 400, '../fonts/icomoon.woff')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #9A9CA5
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
