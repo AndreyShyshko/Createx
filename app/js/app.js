@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Custom JS
 
 	//tabs and tabcontent
-	const list = document.querySelector(".benefits__list");
-	const tabs = document.querySelectorAll(".benefits__tab");
-	const tabContent = document.querySelectorAll(".benefits__column-item");
+	const list = document.querySelector(".tabs__list");
+	const tabs = document.querySelectorAll(".tabs__label");
+	const tabContent = document.querySelectorAll(".tabs-content__item");
 
 	function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	list.addEventListener("click", (e) => {
 		let target = e.target;
-		if(target && target.classList.contains("benefits__tab")) {
+		if(target && target.classList.contains("tabs__label")) {
 			for (let tab of tabs) {
 				if(tab.classList.contains("active")) {
 					tab.classList.remove("active");
