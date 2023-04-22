@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	if (window.location.pathname === "/course.html") {
+	if (window.location.pathname == "/course.html") {
 		navLinks[1].classList.add("active");
 	} 
 
