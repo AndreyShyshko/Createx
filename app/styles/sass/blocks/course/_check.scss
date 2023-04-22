@@ -1,0 +1,99 @@
+.check {
+    padding: 120px 0 180px;
+
+    &__label {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: #1E212C;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        margin-bottom: -36px;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 48px;
+        .button-next,
+        .button-prev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            transition: background .3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .button-next:hover,
+        .button-prev:hover {
+            background: #FF3F3A;
+            .icon-arrow-left:before,
+            .icon-arrow-right:before {
+                color: #FFFFFF;
+            }
+        }
+
+        .button-next {
+            .icon-arrow-right:before {
+                font-size: 24px;
+            }
+        }
+
+        .button-prev {
+            .icon-arrow-left:before {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__list {
+        height: 294px;
+    }
+
+    &__item {
+        height: 214px;
+        padding: 2px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.5;
+        margin-right: 40px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 3.25;
+        letter-spacing: 0.5px;
+        background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+        width: 202px;
+        height: 52px;
+        border-radius: 4px;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+}

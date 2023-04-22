@@ -29,59 +29,105 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-	list.addEventListener("click", (e) => {
-		let target = e.target;
-		if(target && target.classList.contains("tabs__label")) {
-			for (let tab of tabs) {
-				if(tab.classList.contains("active")) {
-					tab.classList.remove("active");
-				} 
-			}
-			target.classList.add("active");
-
-			for(let i = 0; i < tabs.length; i++) {
-                if (target == tabs[i]) {
-                    hideTabContent(0);
-                    showTabContent(i);
-                    break;
-                }
-            }
-		};
-	});
-
-		//swiper-slider
-		const swiperTutors = new Swiper('.tutors-swiper', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-			slidesPerView: 4,
-			spaceBetween: 30,
+	if(list !== null) {
+		list.addEventListener("click", (e) => {
+			let target = e.target;
+			if(target && target.classList.contains("tabs__label")) {
+				for (let tab of tabs) {
+					if(tab.classList.contains("active")) {
+						tab.classList.remove("active");
+					} 
+				}
+				target.classList.add("active");
 	
-			// Navigation arrows
-			navigation: {
-				nextEl: '.button-next',
-				prevEl: '.button-prev',
-			},
-		});	
+				for(let i = 0; i < tabs.length; i++) {
+					if (target == tabs[i]) {
+						hideTabContent(0);
+						showTabContent(i);
+						break;
+					}
+				}
+			};
+		});
+	}
 
-		const swiperTestimonials = new Swiper('.testimonials-swiper', {
-			// Optional parameters
-			direction: 'horizontal',
-			loop: true,
-			slidesPerView: "auto",
-			centeredSlides: true,
-			spaceBetween: 105,
-	
-			// Navigation arrows
-			navigation: {
-				nextEl: '.button-next',
-				prevEl: '.button-prev',
-			},
-			//Pagination
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			  },
-		});	
 
+	//swiper-slider
+	const swiperTutors = new Swiper('.tutors-swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: 4,
+		spaceBetween: 30,
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.button-next',
+			prevEl: '.button-prev',
+		},
+	});	
+
+	const swiperTestimonials = new Swiper('.testimonials-swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: "auto",
+		centeredSlides: true,
+		spaceBetween: 105,
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.button-next',
+			prevEl: '.button-prev',
+		},
+		//Pagination
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});	
+
+	const swiperCheckCourses = new Swiper('.check-course-swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: 2,
+		spaceBetween: 30,
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.button-next',
+			prevEl: '.button-prev',
+		},
+	});	
+
+	//active link
+	const navLinks = document.querySelectorAll(".header-nav__link");
+
+	for (let navLink of navLinks) {
+		if (window.location.href === navLink.href) {
+			navLink.classList.add("active");
+		}
+	}
+
+	if (window.location.pathname === "/course.html") {
+		navLinks[1].classList.add("active");
+	} 
+
+	//accordion
+	const accordion = document.querySelectorAll('.accordion__item');
+
+	if(accordion !== null) {
+		for (let i = 0; i < accordion.length; i++) {
+			accordion[i].addEventListener('click', () => {
+				for (let j = 0; j < accordion.length; j++) {
+					if(accordion[i] === accordion[j]) {
+						accordion[j].classList.toggle('active')
+					} else {
+						accordion[j].classList.remove('active')
+					}
+				}
+			})	
+		}
+	}
 })

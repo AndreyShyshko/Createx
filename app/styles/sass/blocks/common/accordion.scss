@@ -1,0 +1,61 @@
+.accordion {
+    
+    &__list {
+        overflow: hidden;
+    }
+
+    &__item {
+        background: #ffffff;
+        padding-left: 40px;
+        position: relative;
+        .icon-plus:before,
+        .icon-minus:before {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            color: #FF3F3A;
+            font-size: 20px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        &:not(:last-child) {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__item:not(.active) .icon-minus:before,
+    &__item.active .icon-plus:before {
+        display: none;
+    }
+
+    &__title {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        cursor: pointer;
+    }
+
+    &__lesson {
+        color: #FF3F3A;
+        font-weight: 400;
+        margin-right: 6px;
+    }
+
+    &__item:not(.active) &__content {
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__content {
+        color: #424551;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 16px;
+        height: 100px;
+        transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

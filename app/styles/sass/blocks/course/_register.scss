@@ -1,0 +1,75 @@
+.register {
+    background: #f4f5f7;
+    background-image: url("../images/dist/course/shapes-register.svg");
+    background-position: top 100px left 50px;
+    background-repeat: no-repeat;
+    padding: 90px 0 100px;
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column-right {
+        width: 495px;
+    }
+
+    &__label-top {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: #1E212C;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        margin-bottom: 40px;
+    }
+
+    &__label {
+        color: #424551;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 52px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: 13px 16px;
+        margin-top: 8px;
+        &::placeholder {
+            color: #9A9CA5;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+
+    &__button {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 3.25;
+        letter-spacing: 0.5px;
+        width: 100%;
+        height: 52px;
+        background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+        border-radius: 4px;
+        margin-top: 40px;
+    }
+}

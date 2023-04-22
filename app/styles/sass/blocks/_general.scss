@@ -1,5 +1,5 @@
 // GENERAL PROJECT STYLES
-h2 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -11,10 +11,6 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-p {
-    margin: 0;
 }
 
 button {
@@ -147,5 +143,20 @@ button {
 
 .icon-search:before {
     content: "\e917";
+    font-family: 'icomoon';
+}
+
+.icon-behance:before {
+    content: "\e918";
+    font-family: 'icomoon';
+}
+
+.icon-plus:before {
+    content: "\e919";
+    font-family: 'icomoon';
+}
+
+.icon-minus:before {
+    content: "\e91a";
     font-family: 'icomoon';
 }
