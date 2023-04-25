@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (window.location.pathname.includes('course.html')) {
 		navLinks[1].classList.add("active");
-	} 
+	}
 
 	//accordion
 	const accordion = document.querySelectorAll('.accordion__item');
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						accordion[j].classList.remove('active')
 					}
 				}
-			})	
+			})
 		}
 	}
 })
