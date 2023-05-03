@@ -63,6 +63,9 @@
             font-size: 14px;
             line-height: 1.5;
         }
+        &:focus {
+            outline: 1px solid #1E212C;
+        }
     }
 
     &__search-button {

@@ -1,0 +1,210 @@
+.events {
+    background-image: url("../images/dist/events/dots-events.svg"),
+                    url("../images/dist/events/circles-events.svg");
+    background-position: top 150px left 0, bottom 30% right 0, center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+
+    &__label {
+        color: #1E212C;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: #1E212C;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__filters-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__filters-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__filters-label {
+        color: #424551;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-right: 12px;
+    }
+
+    &__filters-select {
+        color: #424551;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 160px;
+        height: 44px;
+        padding: 12px 16px;
+        appearance: none;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        background-image: url("../images/dist/events/down-chevron-toolbar.svg");
+        background-repeat: no-repeat;
+        background-position: right 16px top 14px;
+        &.count {
+            width: 72px;
+            background-image: url("../images/dist/events/up-down-select-toolbar.svg");
+        }
+        &:focus {
+            outline: 1px solid #1E212C;
+        }
+    }
+
+    &__filters-option {
+        color: #424551;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    &__filters-text {
+        color: #787A80;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-left: 12px;
+    }
+
+    &__search-form {
+        position: relative;
+    }
+
+    &__search-input {
+        width: 282px;
+        height: 44px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: 12px 16px;
+        &::placeholder {
+            color: #9A9CA5;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        &:focus {
+            outline: 1px solid #1E212C;
+        }
+    }
+
+    &__search-button {
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+        width: 48px;
+        height: 44px;
+    }
+
+    .icon-search:before {
+        color: #9A9CA5;
+        font-size: 16px;
+    }
+
+    &__mode-buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__mode-list,
+    &__mode-grid {
+        height: 20px;
+        background-color: transparent;
+        &.active {
+            &.icon-list:before,
+            &.icon-grid:before {
+                color: #FF3F3A;
+            }
+        }
+    }
+
+    &__mode-list:hover.icon-list:before,
+    &__mode-grid:hover.icon-grid:before {
+        color: #FF3F3A;
+    }
+
+    .icon-list,
+    .icon-grid {
+        line-height: 20px;
+        &:before {
+            color: #424551;
+            font-size: 20px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__pagination-prev,
+    &__pagination-next {
+        height: 26px;
+        background-color: transparent;
+        &:hover {
+            .icon-arrow-left,
+            .icon-arrow-right {
+                &:before {
+                    color: #FF3F3A;
+                }
+            }
+        }
+    }
+
+    .icon-arrow-left,
+    .icon-arrow-right {
+        line-height: 26px;
+        &:before {
+            color: #424551;
+            font-size: 24px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__pagination-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__pagination-item {
+        color: #424551;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.6;
+        width: 20px;
+        text-align: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &.current {
+            color: #FF3F3A;
+        }
+        &:hover {
+            color: #FF3F3A;
+            &.current {
+                color: #FF3F3A;
+            }
+        }
+    }
+}

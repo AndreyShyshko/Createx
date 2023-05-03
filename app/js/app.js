@@ -130,4 +130,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	}
+
+	//list-grid mode
+	const modeBtns = document.querySelector(".events__mode-buttons");
+	const modeList = document.querySelector(".events__mode-list");
+	const modeGrid = document.querySelector(".events__mode-grid");
+	const eventsList = document.querySelector(".events__list");
+
+	if(modeBtns !== null) {
+		modeBtns.addEventListener("click", (e) => {
+			let target = e.target;
+			if(target === modeList) {
+				modeList.classList.add("active");
+				modeGrid.classList.remove("active");
+				eventsList.classList.remove("grid-mode");
+				eventsList.classList.add("list-mode");
+			}
+			if(target === modeGrid) {
+				modeGrid.classList.add("active");
+				modeList.classList.remove("active");
+				eventsList.classList.remove("list-mode");
+				eventsList.classList.add("grid-mode");
+			}
+		})
+	}
 })
