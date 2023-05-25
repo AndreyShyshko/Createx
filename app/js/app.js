@@ -101,6 +101,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	});	
 
+	const swiperCheckEvents = new Swiper('.check-event-swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: 3,
+		spaceBetween: 30,
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.button-next',
+			prevEl: '.button-prev',
+		},
+	});	
+
 	//active link
 	const navLinks = document.querySelectorAll(".header-nav__link");
 
@@ -109,9 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			navLink.classList.add("active");
 		}
 	}
-
 	if (window.location.pathname.includes('course.html')) {
 		navLinks[1].classList.add("active");
+	}
+	if (window.location.pathname.includes('event.html')) {
+		navLinks[2].classList.add("active");
 	}
 
 	//accordion
