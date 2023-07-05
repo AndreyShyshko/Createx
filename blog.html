@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title></title>
+	<meta name="description" content="Createx">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	
+	<link rel="stylesheet" href="./css/app.min.css">
+
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__content">
+				<nav class="header-nav">
+					<a href="./index.html" class="header-nav__logo-link">
+						<img class="header-nav__img" src="./images/dist/homepage/logo-header.svg" alt="logo-img">
+					</a>
+					<ul class="header-nav__list">
+						<li class="header-nav__items"><a class="header-nav__link" href="./about.html">About Us</a></li>
+						<li class="header-nav__items"><a class="header-nav__link" href="./courses.html">Courses</a></li>
+						<li class="header-nav__items"><a class="header-nav__link" href="./events.html">Events</a></li>
+						<li class="header-nav__items"><a class="header-nav__link" href="./blog.html">Blog</a></li>
+						<li class="header-nav__items"><a class="header-nav__link" href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<button class="header-buttons__consultation">Get consultation</button>
+					<span class="icon-profile"></span>
+					<button class="header-buttons__login">Log in</button>
+					<span class="header-buttons__delimeter">/</span>
+					<button class="header-buttons__register">Register</button>
+				</div>	
+			</div>
+		</div>
+	</header>
+
+    <main>
+        <section class="blog">
+            <div class="container">
+                <p class="blog__label">Our blog</p>
+                <h2 class="blog__title">Createx School Journal</h2>
+                <div class="blog__wrapper">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <p class="tabs__label active">
+								All
+                            </p>
+                        </li>
+                        <li class="tabs__item">
+                            <p class="tabs__label">
+                                <span class="icon-article"></span>
+								Articles
+                            </p>
+                        </li>
+                        <li class="tabs__item">
+                            <p class="tabs__label">
+                                <span class="icon-play"></span>
+								Videos
+                            </p>
+                        </li>
+                        <li class="tabs__item">
+                            <p class="tabs__label">
+                                <span class="icon-microphone"></span>
+								Podcasts
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="blog__filter">
+                        <span class="blog__filter-label">Blog category</span>
+                        <select class="blog__filter-select">
+                            <option class="blog__filter-option">all themes</option>
+                            <option class="blog__filter-option">article</option>
+                            <option class="blog__filter-option">video</option>
+                            <option class="blog__filter-option">podcast</option>
+                        </select>
+                    </div>
+                    <form class="blog__search-form">
+                        <input type="text" class="blog__search-input" placeholder="Search blog...">
+                        <button class="blog__search-button"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+                <ul class="blog__list">
+					<li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-microphone"></span>
+							Podcast
+						</p>
+						<img src="./images/dist/blog/marketing-podcast-arbitrage.jpg" alt="marketing-podcast-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Marketing</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								September 4, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								36 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">What is traffic arbitrage and does it really make money?</h3>
+						<p class="blog__post-text">
+							Pharetra, ullamcorper iaculis viverra parturient sed id sed. 
+							Convallis proin dignissim lacus, purus gravida...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Listen
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-article"></span>
+							Article
+						</p>
+						<img src="./images/dist/blog/development-article-language.jpg" alt="development-article-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Development</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								September 1, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								15 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">How to choose the first programming language for a beginner</h3>
+						<p class="blog__post-text">
+							Turpis sed at magna laoreet gravida consequat tortor 
+                            placerat. Gravida vitae aliquet enim egestas dui...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Read
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-article"></span>
+							Article
+						</p>
+						<img src="./images/dist/blog/design-article-profession.jpg" alt="design-article-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Design</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								August 8, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								10 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">Should you choose a creative profession if you are attracted to creativity?</h3>
+						<p class="blog__post-text">
+							Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. 
+							Tortor, viverra sed vulputate ultrices...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Read
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+					<li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-article"></span>
+							Article
+						</p>
+						<img src="./images/dist/blog/hr-article-statistics.jpg" alt="hr-article-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">HR & Recruting</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								August 3, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								18 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">HR statistics: job search,  interviews, hiring and recruiting</h3>
+						<p class="blog__post-text">
+							Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing 
+                            aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, 
+                            massa vivamus. A molestie id semper fermentum pretium...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Read
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-play"></span>
+							Video
+						</p>
+						<img src="./images/dist/blog/management-video-feedback.jpg" alt="management-video-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Management</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								August 25, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								45 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">What to do and who to talk to if you want to get feedback on the product</h3>
+						<p class="blog__post-text">
+							Neque a, senectus consectetur odio in aliquet nec eu. 
+							Ultricies ac nibh urna urna sagittis faucibus...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Watch
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-microphone"></span>
+							Podcast
+						</p>
+						<img src="./images/dist/blog/design-podcast-color.png" alt="design-podcast-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Design</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								July 28, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								36 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">What are color profiles and how they work in graphic design</h3>
+						<p class="blog__post-text">
+							Aliquam vulputate hendrerit quam sollicitudin urna 
+                            enim viverra gravida. Consectetur urna arcu eleifend...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Listen
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-play"></span>
+							Video
+						</p>
+						<img src="./images/dist/blog/management-video-startup.png" alt="management-video-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Management</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								July 15, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								45 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">Startup: how to build a team that will live longer than a year</h3>
+						<p class="blog__post-text">
+							Nisi, massa ut sit faucibus et diam. Faucibus at 
+                            malesuada at justo scelerisque in nisi, urna...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Watch
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+                    <li class="blog__item">
+						<p class="blog__post-type">
+							<span class="icon-article"></span>
+							Article
+						</p>
+						<img src="./images/dist/blog/marketing-article-customers.jpg" alt="marketing-article-image" class="blog__post-image">
+						<div class="blog__post-info">
+							<p class="blog__post-category">Marketing</p>
+							<p class="blog__post-date">
+								<span class="icon-calendar"></span>
+								July 9, 2020
+							</p>
+							<p class="blog__post-duration">
+								<span class="icon-clock"></span>
+								10 min
+							</p>
+						</div>
+						<h3 class="blog__post-title">How to get customers to love your business from the start</h3>
+						<p class="blog__post-text">
+							Malesuada in augue mi feugiat morbi a aliquet enim. 
+                            Elementum lacus, pellentesque etiam arcu tristique ac...
+						</p>
+						<a href="./single-post.html" class="blog__post-link">
+							Read
+							<span class="icon-arrow-right"></span>
+						</a>
+					</li>
+				</ul>
+                <div class="blog__pagination">
+					<button type="button" class="blog__pagination-prev" style="display: none;">
+						<span class="icon-arrow-left"></span>
+					</button>
+					<div class="blog__pagination-list">
+						<a href="#" class="blog__pagination-item current">1</a>
+						<a href="#" class="blog__pagination-item">2</a>
+						<a href="#" class="blog__pagination-item">3</a>
+						<a href="#" class="blog__pagination-item">4</a>
+					</div>
+					<button type="button" class="blog__pagination-next">
+						<span class="icon-arrow-right"></span>
+					</button>
+				</div>
+            </div>
+        </section>
+
+        <section class="subscribe-blog">
+            <div class="container">
+				<div class="subscribe-blog__columns">
+					<div class="subscribe-blog__left-column">
+						<img src="./images/dist/blog/illustration-subscribe-blog.svg" alt="subscribe-blog-image" class="subscribe-blog__image">
+					</div>
+					<div class="subscribe-blog__right-column">
+						<h4 class="subscribe-blog__title">
+							Want to get the best articles weekly?
+							Subscribe to our newsletter!
+						</h4>
+						<form class="subscribe-blog__form">
+							<input type="text" class="subscribe-blog__input" placeholder="Your working email">
+							<button type="button" class="subscribe-blog__button">Subscribe</button>
+							<label class="subscribe-blog__label">
+								<input type="checkbox" class="subscribe-blog__checkbox">
+								<span class="icon-checkbox"></span>
+								I agree to receive communications from Createx Online School
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+        </section>
+    </main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__columns">
+				<div class="footer__info-column">
+					<img src="./images/dist/homepage/logo-footer.svg" alt="logo-image" class="footer__info-image">
+					<p class="footer__info-text">
+						Createx Online School is a leader in online studying. 
+						We have lots of courses and programs from the main 
+						market experts. We provide relevant approaches 
+						to online learning, internships and employment 
+						in the largest companies in the country. 
+					</p>
+					<ul class="footer__info-socials-list">
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-facebook"></span></a></li>
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-twitter"></span></a></li>
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-youtube"></span></a></li>
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-telegram"></span></a></li>
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-instagram"></span></a></li>
+						<li class="footer__info-socials-item"><a href="#" class="footer__info-socials-link"><span class="icon-linkedin"></span></a></li>
+					</ul>
+				</div>
+				<div class="footer__site-map-column">
+					<h3 class="footer__site-map-title">Site map</h3>
+					<ul class="footer__site-map-list">
+						<li class="footer__site-map-item"><a href="./about.html" class="footer__site-map-link">About Us</a></li>
+						<li class="footer__site-map-item"><a href="./courses.html" class="footer__site-map-link">Courses</a></li>
+						<li class="footer__site-map-item"><a href="./events.html" class="footer__site-map-link">Events</a></li>
+						<li class="footer__site-map-item"><a href="./blog.html" class="footer__site-map-link">Blog</a></li>
+						<li class="footer__site-map-item"><a href="#" class="footer__site-map-link">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="footer__courses-column">
+					<h3 class="footer__courses-title">Courses</h3>
+					<ul class="footer__courses-list">
+						<li class="footer__courses-item"><a href="./course.html" class="footer__courses-link">Marketing</a></li>
+						<li class="footer__courses-item"><a href="./course.html" class="footer__courses-link">Management</a></li>
+						<li class="footer__courses-item"><a href="./course.html" class="footer__courses-link">HR & Recruting</a></li>
+						<li class="footer__courses-item"><a href="./course.html" class="footer__courses-link">Design</a></li>
+						<li class="footer__courses-item"><a href="./course.html" class="footer__courses-link">Development</a></li>
+					</ul>
+				</div>
+				<div class="footer__contacts-column">
+					<h3 class="footer__contacts-title">Contact us</h3>
+					<a href="tel:4055550128" class="footer__contacts-link-phone">
+						<span class="icon-phone"></span>
+						(405) 555-0128
+					</a>
+					<a href="mailto:hello@createx.com" class="footer__contacts-link-email">
+						<span class="icon-email"></span>
+						hello@createx.com
+					</a>
+				</div>
+				<div class="footer__sign-up-column">
+					<h3 class="footer__sign-up-title">Sign up to our newsletter</h3>
+					<form class="footer__sign-up-form">
+						<input type="text" class="footer__sign-up-input" placeholder="Email address">
+						<button class="footer__sign-up-button"><span class="icon-arrow-right"></span></button>
+					</form>
+					<p class="footer__sign-up-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="copyright__wrapper">
+					<p class="copyright__text">
+						© All rights reserved. Made with <span class="icon-heart"></span> by Createx Studio
+					</p>
+					<a href="#header" class="copyright__link">Go to top</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
